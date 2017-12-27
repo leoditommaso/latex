@@ -1,8 +1,7 @@
 AUX_DIR = tmp
 OUT_DIR = pdf
-SRC_DIR = src
-FILE = $(SRC_DIR)/$(REL_DIR)/$(MAIN)
-OUT = $(OUT_FILE).pdf
+FILE = $(REL_DIR)/$(MAIN)
+OUT = $(MAIN).pdf
 
 TEX = lualatex -output-directory $(AUX_DIR) -interaction nonstopmode -shell-escape -file-line-error-style
 

@@ -4,8 +4,8 @@ MAINTAINER Leandro Di Tommaso <leandro.ditommaso@gmail.com>
 
 ENV DEBIAN_FRONTEND noninteractive
 
-COPY ./Makefile /opt/
 COPY ./entrypoint.sh /bin/
+COPY ./Makefile /opt/
 COPY ./fonts/Lato/*.ttf /usr/share/fonts/truetype/
 COPY ./fonts/Open_Sans/*.ttf /usr/share/fonts/truetype/
 COPY ./fonts/Roboto/*.ttf /usr/share/fonts/truetype/

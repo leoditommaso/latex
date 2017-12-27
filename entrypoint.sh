@@ -10,7 +10,7 @@ TARGET="$@"
 cp $MAKEFILE .
 
 for file in $TARGET; do
-  REL_DIR=`dirname $file` MAIN=`basename $file` OUT_FILE=`basename $file` make
+  REL_DIR=`dirname $file` MAIN=`basename $file | cut -d '.' -f1` make
 done
 
 rm Makefile
